@@ -1,0 +1,29 @@
+stages:
+  tBodyAccMean:
+    cmd: python src/tBodyAcc-mean.py data/samsungData.csv
+    deps:
+    - data/samsungData.csv
+    - src/tBodyAcc-mean.py
+    outs:
+    - data/tBodyAcc-mean
+  tBodyAccMax:
+    cmd: python src/tBodyAcc-max.py data/samsungData.csv
+    deps:
+    - data/samsungData.csv
+    - src/tBodyAcc-max.py
+    outs:
+    - data/tBodyAcc-max
+  SVD:
+    cmd: python src/SVD.py data/samsungData.csv
+    deps:
+    - data/samsungData.csv
+    - src/SVD.py
+    outs:
+    - data/svd
+  Kmeans:
+    cmd: python src/kmeans.py data/samsungData.csv
+    deps:
+    - data/samsungData.csv
+    - src/kmeans.py
+    outs:
+    - data/kmeans

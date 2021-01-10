@@ -1,0 +1,56 @@
+tBodyAccMean:
+  cmd: python src/tBodyAcc-mean.py data/samsungData.csv
+  deps:
+  - path: data/samsungData.csv
+    md5: 04a9687f1f6b92a872e727c029777e55
+    size: 48150152
+  - path: src/tBodyAcc-mean.py
+    md5: 98f1cfbbd624da0f183a6fa1e39f6718
+    size: 2218
+  outs:
+  - path: data/tBodyAcc-mean
+    md5: 800a6cd0437adf16b1f2a3219c7dc5af.dir
+    size: 103257
+    nfiles: 2
+tBodyAccMax:
+  cmd: python src/tBodyAcc-max.py data/samsungData.csv
+  deps:
+  - path: data/samsungData.csv
+    md5: 04a9687f1f6b92a872e727c029777e55
+    size: 48150152
+  - path: src/tBodyAcc-max.py
+    md5: e7f90806da9adb5d34cb7a009735c277
+    size: 1770
+  outs:
+  - path: data/tBodyAcc-max
+    md5: 275c8183d0e52a7f88c10243f019c03f.dir
+    size: 100713
+    nfiles: 2
+SVD:
+  cmd: python src/SVD.py data/samsungData.csv
+  deps:
+  - path: data/samsungData.csv
+    md5: 04a9687f1f6b92a872e727c029777e55
+    size: 48150152
+  - path: src/SVD.py
+    md5: 91de715255f9d4072d2c1d9fa066bb46
+    size: 1861
+  outs:
+  - path: data/svd
+    md5: 72c44544021a95cd86bbedcd65b31775.dir
+    size: 100972
+    nfiles: 2
+Kmeans:
+  cmd: python src/kmeans.py data/samsungData.csv
+  deps:
+  - path: data/samsungData.csv
+    md5: 04a9687f1f6b92a872e727c029777e55
+    size: 48150152
+  - path: src/kmeans.py
+    md5: 223d659ca355115b01e196f2c76e2760
+    size: 1212
+  outs:
+  - path: data/kmeans
+    md5: f5b8950daf437d892b2669e7434776d3.dir
+    size: 24568
+    nfiles: 2
