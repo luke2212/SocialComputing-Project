@@ -23,7 +23,7 @@ cd SocialComputing-Project
 conda create -n venv
 conda activate venv
 ```
-  or if you are using Windows, you can create the virtual environment by using `virtualvenv`
+  or you can create the virtual environment by using `virtualvenv`
 
 ```
 virtualenv -p /usr/bin/python3.7 venv
