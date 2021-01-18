@@ -17,7 +17,7 @@ For each record in the dataset it is provided:
 git clone https://github.com/luke2212/SocialComputing-Project
 cd SocialComputing-Project
 ```
-2. Create a virtual environment and install the dependancies as listed in `requirements.txt`. This project has been run on Ubuntu 20.04 with a conda environment
+2. Create a virtual environment and install the dependancies as listed in `requirements.txt`. This project has been run on Ubuntu 20.04 with a conda environment using python 3.7
 
 ```
 conda create -n venv
